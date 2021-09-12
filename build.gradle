@@ -16,6 +16,8 @@ buildscript {
 
 allprojects {
     apply plugin: "eclipse"
+    apply plugin: "maven"
+    group = "com.github.hirshi001"
 
     version = '1.0'
     ext {

@@ -29,8 +29,8 @@ allprojects {
         aiVersion = '1.8.2'
         gdxControllersVersion = '2.1.0'
 
-        betterLoggerVersion = 'v1.0.5'
-        nettyPacketsVersion = '1.0.2'
+        betterLoggerVersion = '-SNAPSHOT'
+        nettyPacketsVersion = '-SNAPSHOT'
         jclVersion = '2.8'
     }
 
@@ -42,14 +42,6 @@ allprojects {
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         maven { url "https://oss.sonatype.org/content/repositories/releases/" }
         maven { url 'https://jitpack.io' }
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/hirshi001/nettypackets")
-            credentials {
-                username = project.findProperty("name") ?: System.getenv("USERNAME")
-                password = project.findProperty("key") ?: System.getenv("TOKEN")
-            }
-        }
     }
 }
 

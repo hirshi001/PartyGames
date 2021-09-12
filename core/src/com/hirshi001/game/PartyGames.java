@@ -50,7 +50,6 @@ public class PartyGames implements ApplicationListener {
 		playerSet = new HashMap<>();
 		jcl = new JarClassLoader();
 
-
 		File file = Gdx.files.external(EXTERNAL_PATH + "JarPlugins/hi.jar").file();
 
 		try {
